@@ -10,6 +10,11 @@
 :root{
   --first-color: #4070F4;
   --second-color: #0E2431;
+  --btn-text: #fff;
+  --skills-bg: rgb(250, 250, 250);
+  --background-color: #fff;
+  --footer-color: #0E2431;
+  --footer-text: #fff;
 }
 
 /*===== Fuente y tipografia =====*/
@@ -75,6 +80,10 @@ img{
   display: block;
 }
 
+main{
+  background-color: var(--background-color);
+}
+
 /*===== CLASS CSS ===== */
 .section-title{
   position: relative;
@@ -116,7 +125,7 @@ img{
   top: 0;
   left: 0;
   z-index: var(--z-fixed);
-  background-color: #fff;
+  background-color: var(--background-color);
   box-shadow: 0 1px 4px rgba(146,161,176,.15);
 }
 
@@ -145,7 +154,7 @@ img{
 }
 .nav__link{
   position: relative;
-  color: #fff;
+  color: var(--background-color);
 }
 .nav__link:hover{
   position: relative;
@@ -223,7 +232,7 @@ img{
 .button{
   display: inline-block;
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--btn-text);
   padding: .75rem 2.5rem;
   font-weight: var(--font-semi);
   border-radius: .5rem;
@@ -269,6 +278,7 @@ img{
   margin-bottom: var(--mb-4);
   border-radius: .5rem;
   box-shadow: 0 4px 25px rgba(14,36,49,.15);
+  background-color: var(--skills-bg);
 }
 .skills__icon{
   font-size: 2rem;
@@ -343,8 +353,8 @@ img{
 
 /* ===== FOOTER =====*/
 .footer{
-  background-color: var(--second-color);
-  color: #fff;
+  background-color: var(--footer-color);
+  color: var(--footer-text);
   text-align: center;
   font-weight: var(--font-semi);
   padding: 2rem 0;
@@ -358,8 +368,33 @@ img{
 }
 .footer__icon{
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--footer-text);
   margin: 0 var(--mb-2)
+}
+
+#btn-theme{
+  display: flex;  
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  right: 4%;
+  bottom: 4%;
+  height: 65px;
+  width: 65px;
+  border-radius: 50%;
+  background-color: var(--second-color);
+  outline: none;
+  border: none;
+  transition: margin-bottom 0.2s ease-in;
+  cursor: pointer;
+}
+
+#btn-theme:hover{
+  margin-bottom: 1%;
+}
+
+#btn-image {
+  width: 65%;
 }
 
 /* ===== MEDIA QUERIES=====*/
