@@ -12,7 +12,7 @@ const setLight = () => {
 
 const setDark = () => {
     const cssVariables = document.documentElement.style;
-    cssVariables.setProperty('--first-color', '#91FF16');
+    cssVariables.setProperty('--first-color', '#4070F4');
     cssVariables.setProperty('--second-color', '#fff');
     cssVariables.setProperty('--btn-text', '#0E2431');
     cssVariables.setProperty('--skills-bg', '#0c1c29');
